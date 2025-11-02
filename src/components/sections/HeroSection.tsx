@@ -102,41 +102,36 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        {/* Pricing Box */}
-        <div className="max-w-2xl mx-auto bg-white rounded-2xl p-8 md:p-10 shadow-2xl animate-slide-up border border-gray-200">
-          <div className="text-center mb-6">
-            <p className="text-gray-500 line-through text-lg mb-2">De R$ 1.075,00 por apenas:</p>
-            <div className="flex items-baseline justify-center gap-3 mb-2">
-              <span className="text-5xl md:text-6xl font-bold text-gray-900">R$ 47</span>
-              <span className="text-lg text-gray-700">,00</span>
-            </div>
-            <p className="text-gray-700">ou 12x de R$ 4,59</p>
-          </div>
-
+        {/* CTA Box */}
+        <div className="max-w-2xl mx-auto bg-white rounded-2xl p-8 md:p-10 shadow-lg animate-slide-up border border-gray-200">
           {/* Progress Bar */}
-          <div className="mb-8">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-sm text-gray-700 font-medium">🔥 Ingressos vendidos</span>
-              <span className="text-sm font-bold text-green-primary">73%</span>
+          <div className="mb-6">
+            <div className="flex justify-between items-center mb-3">
+              <span className="text-base text-gray-800 font-medium">🔥 Ingressos vendidos</span>
+              <span className="text-base font-bold text-green-primary">73%</span>
             </div>
             <ProgressBar progress={73} />
           </div>
 
           {/* CTA Button */}
-          <Button variant="cta" size="xl" className="w-full mb-6 animate-pulse-green">
+          <Button variant="cta" size="xl" className="w-full mb-8 animate-pulse-green text-lg font-bold">
             QUERO GARANTIR MINHA PARTICIPAÇÃO
           </Button>
 
-          {/* Timer */}
+          {/* Timer Section */}
           <div className="border-t border-gray-200 pt-6">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm mb-4">
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-green-primary" />
-                <span className="font-bold text-gray-900">
+            <div className="grid md:grid-cols-2 gap-4 mb-6 text-sm">
+              <div className="flex items-start gap-2">
+                <Clock className="w-5 h-5 text-green-primary flex-shrink-0 mt-0.5" />
+                <span className="font-bold text-gray-900 leading-tight">
                   Última Turma — Nunca Mais Será Oferecido
                 </span>
               </div>
-              <div className="text-gray-700 font-medium">📅 01, 02 e 03 de Dezembro | 20h — Ao Vivo no Zoom</div>
+              <div className="flex items-start gap-2 md:justify-end">
+                <span className="text-gray-800 font-medium leading-tight">
+                  📅 01, 02 e 03 de Dezembro | 20h — Ao Vivo no Zoom
+                </span>
+              </div>
             </div>
             <CountdownTimer targetDate="2025-12-01T20:00:00" />
           </div>
