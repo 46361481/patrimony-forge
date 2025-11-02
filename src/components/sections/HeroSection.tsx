@@ -14,8 +14,8 @@ export const HeroSection = () => {
         {/* Top badges and info */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black-premium text-white text-sm font-medium w-fit">
-            <span className="text-white">Mecanismo de Alavancagem</span>
-            <span className="text-gray-300">WORKSHOP</span>
+            <span className="text-white">Para quem tem patrimônio acima de R$ 1 milhão</span>
+            <span className="text-gray-300">| Evento Exclusivo</span>
           </div>
           <div className="flex flex-col md:flex-row gap-3">
             <div className="px-4 py-2 rounded-full border border-gray-300 bg-white text-sm text-gray-800 font-medium">
@@ -38,7 +38,7 @@ export const HeroSection = () => {
             </h1>
             <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
               Domine os 3 mecanismos de alavancagem que transformaram profissionais de alta renda em
-              investidores com renda passiva de R$ 30 mil/mês em 7 anos.
+              investidores com renda passiva de R$ 30 mil/mês em 7 anos — sem depender de sorte, timing de mercado ou aumentar seu capital inicial.
             </p>
           </div>
 
@@ -81,7 +81,7 @@ export const HeroSection = () => {
             <div className="w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center mx-auto mb-4">
               <TrendingUp className="w-6 h-6 text-green-primary" />
             </div>
-            <p className="font-bold text-gray-900 mb-2">MAIS LUCRO</p>
+            <p className="font-bold text-gray-900 mb-2">✓ Mais Rentabilidade</p>
             <p className="text-sm text-gray-700">4% a 6% ao mês de forma consistente</p>
           </div>
 
@@ -89,7 +89,7 @@ export const HeroSection = () => {
             <div className="w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center mx-auto mb-4">
               <Shield className="w-6 h-6 text-green-primary" />
             </div>
-            <p className="font-bold text-gray-900 mb-2">SEM PRECISAR CONTRATAR</p>
+            <p className="font-bold text-gray-900 mb-2">✓ Sem Se Matar de Trabalhar</p>
             <p className="text-sm text-gray-700">Arquitetura que funciona no automático</p>
           </div>
 
@@ -97,13 +97,23 @@ export const HeroSection = () => {
             <div className="w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center mx-auto mb-4">
               <Clock className="w-6 h-6 text-green-primary" />
             </div>
-            <p className="font-bold text-gray-900 mb-2">APLICAÇÃO IMEDIATA</p>
-            <p className="text-sm text-gray-700">Resultados em 7 anos, não em 30</p>
+            <p className="font-bold text-gray-900 mb-2">✓ Aposentadoria em 7 Anos</p>
+            <p className="text-sm text-gray-700">Não em 30 como o mercado tradicional prega</p>
           </div>
         </div>
 
         {/* CTA Box */}
         <div className="max-w-2xl mx-auto bg-white rounded-2xl p-8 md:p-10 shadow-lg animate-slide-up border border-gray-200">
+          {/* Pricing */}
+          <div className="text-center mb-6">
+            <p className="text-gray-500 line-through text-lg mb-2">De R$ 1.075,00 por apenas:</p>
+            <div className="flex items-baseline justify-center gap-3 mb-2">
+              <span className="text-5xl md:text-6xl font-bold text-gray-900">R$ 47</span>
+              <span className="text-lg text-gray-700">,00</span>
+            </div>
+            <p className="text-gray-700">ou 12x de R$ 4,59</p>
+          </div>
+
           {/* Progress Bar */}
           <div className="mb-6">
             <div className="flex justify-between items-center mb-3">
