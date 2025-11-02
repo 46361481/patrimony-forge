@@ -34,7 +34,7 @@ export const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               3 Dias Construindo Sua{" "}
               <span className="text-gradient-green">Arquitetura Financeira</span>{" "}
-              para Alavancar Seu Patrimônio
+              para Alavancar Seu Patrimônio de Forma Estruturada
             </h1>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
               Domine os 3 mecanismos de alavancagem que transformaram profissionais de alta renda em
