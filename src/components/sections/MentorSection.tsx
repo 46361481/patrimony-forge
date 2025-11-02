@@ -1,13 +1,15 @@
+import rhuanPhoto from "@/assets/rhuan-christo.jpg";
+
 export const MentorSection = () => {
   return (
     <section className="py-16 md:py-24 px-4 bg-black-premium text-foreground">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Photo placeholder */}
+          {/* Photo */}
           <div className="animate-fade-in">
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-green-primary/30 shadow-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
+                src={rhuanPhoto}
                 alt="Rhuan Christo"
                 className="w-full h-full object-cover"
               />
