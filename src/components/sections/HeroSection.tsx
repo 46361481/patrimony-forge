@@ -9,10 +9,10 @@ import heroPerson4 from "@/assets/hero-person-4.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-gray-50 text-foreground py-12 md:py-20 px-4">
+    <section className="relative min-h-screen bg-gray-50 text-foreground py-6 md:py-12 px-4">
       <div className="container mx-auto max-w-7xl">
         {/* Top badges and info */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-12 animate-fade-in">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black-premium text-white text-sm font-medium w-fit">
             <span className="text-white">Mecanismo de Alavancagem</span>
             <span className="text-gray-300">WORKSHOP</span>
