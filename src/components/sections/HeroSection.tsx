@@ -41,49 +41,26 @@ export const HeroSection = () => {
               investidores com renda passiva de R$ 30 mil/mês em 7 anos — sem depender de sorte, timing de mercado ou aumentar seu capital inicial.
             </p>
 
-            {/* CTA Box */}
-            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200">
-              {/* Pricing */}
-              <div className="text-center mb-6">
-                <p className="text-gray-500 line-through text-base mb-2">De R$ 1.075,00 por apenas:</p>
-                <div className="flex items-baseline justify-center gap-2 mb-2">
-                  <span className="text-4xl md:text-5xl font-bold text-gray-900">R$ 47</span>
-                  <span className="text-lg text-gray-700">,00</span>
-                </div>
-                <p className="text-gray-700 text-sm">ou 12x de R$ 4,59</p>
+            {/* Progress Bar */}
+            <div className="mb-4">
+              <div className="flex justify-between items-center mb-3">
+                <span className="text-sm text-gray-800 font-medium">🔥 Ingressos vendidos</span>
+                <span className="text-sm font-bold text-green-primary">73%</span>
               </div>
+              <ProgressBar progress={73} />
+            </div>
 
-              {/* Progress Bar */}
-              <div className="mb-6">
-                <div className="flex justify-between items-center mb-3">
-                  <span className="text-sm text-gray-800 font-medium">🔥 Ingressos vendidos</span>
-                  <span className="text-sm font-bold text-green-primary">73%</span>
-                </div>
-                <ProgressBar progress={73} />
-              </div>
+            {/* CTA Button */}
+            <Button variant="cta" size="xl" className="w-full mb-4 animate-pulse-green text-base md:text-lg font-bold">
+              QUERO GARANTIR MINHA PARTICIPAÇÃO
+            </Button>
 
-              {/* CTA Button */}
-              <Button variant="cta" size="xl" className="w-full mb-6 animate-pulse-green text-base md:text-lg font-bold">
-                QUERO GARANTIR MINHA PARTICIPAÇÃO
-              </Button>
-
-              {/* Timer Section */}
-              <div className="border-t border-gray-200 pt-4">
-                <div className="flex flex-col gap-3 mb-4 text-xs md:text-sm">
-                  <div className="flex items-start gap-2">
-                    <Clock className="w-4 h-4 text-green-primary flex-shrink-0 mt-0.5" />
-                    <span className="font-bold text-gray-900 leading-tight">
-                      ⏰ Última Turma — Nunca Mais Será Oferecido
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-800 font-medium leading-tight">
-                      📅 01, 02 e 03 de Dezembro | 20h — Ao Vivo no Zoom
-                    </span>
-                  </div>
-                </div>
-                <CountdownTimer targetDate="2025-12-01T20:00:00" />
-              </div>
+            {/* Última Turma */}
+            <div className="flex items-center justify-center gap-2">
+              <Clock className="w-4 h-4 text-gray-800" />
+              <span className="text-sm font-bold text-gray-900">
+                Última Turma — Nunca Mais Será Oferecido
+              </span>
             </div>
           </div>
 
