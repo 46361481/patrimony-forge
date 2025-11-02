@@ -1,72 +1,111 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, TrendingUp, Shield, Clock } from "lucide-react";
+import { TrendingUp, Shield, Clock } from "lucide-react";
 import { CountdownTimer } from "@/components/ui/countdown-timer";
 import { ProgressBar } from "@/components/ui/progress-bar";
+import heroPerson1 from "@/assets/hero-person-1.jpg";
+import heroPerson2 from "@/assets/hero-person-2.jpg";
+import heroPerson3 from "@/assets/hero-person-3.jpg";
+import heroPerson4 from "@/assets/hero-person-4.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-black-premium text-foreground py-12 md:py-20 px-4">
-      <div className="container mx-auto max-w-5xl">
-        {/* Badge */}
-        <div className="flex justify-center mb-8 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black-soft border border-green-primary/30 text-foreground text-sm">
-            <Sparkles className="w-4 h-4 text-green-primary" />
-            <span>Para quem tem patrimônio acima de R$ 1 milhão</span>
-            <span className="text-green-primary font-bold">| Evento Exclusivo</span>
+    <section className="relative min-h-screen bg-gray-50 text-foreground py-12 md:py-20 px-4">
+      <div className="container mx-auto max-w-7xl">
+        {/* Top badges and info */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-12 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black-premium text-white text-sm font-medium w-fit">
+            <span className="text-white">Mecanismo de Alavancagem</span>
+            <span className="text-gray-400">WORKSHOP</span>
+          </div>
+          <div className="flex flex-col md:flex-row gap-3">
+            <div className="px-4 py-2 rounded-full border border-gray-300 bg-white text-sm">
+              01, 02 e 03 de Dezembro | Ao Vivo
+            </div>
+            <div className="px-4 py-2 rounded-full border border-gray-300 bg-white text-sm">
+              Online
+            </div>
           </div>
         </div>
 
-        {/* Headline */}
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-6 animate-slide-up leading-tight">
-          3 Dias Construindo Sua{" "}
-          <span className="text-gradient-green">Arquitetura Financeira</span>{" "}
-          para Alavancar Seu Patrimônio de Forma Estruturada
-        </h1>
+        {/* Main content grid */}
+        <div className="grid lg:grid-cols-2 gap-12 mb-16 items-center">
+          {/* Left: Headlines */}
+          <div className="animate-slide-up">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              3 Dias Construindo Sua{" "}
+              <span className="text-gradient-green">Arquitetura Financeira</span>{" "}
+              para Alavancar Seu Patrimônio
+            </h1>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              Domine os 3 mecanismos de alavancagem que transformaram profissionais de alta renda em
+              investidores com renda passiva de R$ 30 mil/mês em 7 anos.
+            </p>
+          </div>
 
-        {/* Subheadline */}
-        <p className="text-lg md:text-xl text-gray-300 text-center max-w-4xl mx-auto mb-12 animate-fade-in leading-relaxed">
-          Domine os 3 mecanismos de alavancagem que transformaram profissionais de alta renda em
-          investidores com renda passiva de R$ 30 mil/mês em 7 anos — sem depender de sorte, timing
-          de mercado ou aumentar seu capital inicial.
-        </p>
+          {/* Right: Photo grid */}
+          <div className="grid grid-cols-2 gap-4 animate-fade-in">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={heroPerson1}
+                alt="Investidor 1"
+                className="w-full h-full object-cover aspect-square"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
+              <img
+                src={heroPerson2}
+                alt="Investidor 2"
+                className="w-full h-full object-cover aspect-square"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg -mt-8">
+              <img
+                src={heroPerson3}
+                alt="Investidor 3"
+                className="w-full h-full object-cover aspect-square"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={heroPerson4}
+                alt="Investidor 4"
+                className="w-full h-full object-cover aspect-square"
+              />
+            </div>
+          </div>
+        </div>
 
         {/* Three Pillars */}
         <div className="grid md:grid-cols-3 gap-6 mb-12 animate-fade-in">
-          <div className="flex items-center gap-3 justify-center md:justify-start">
-            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center">
+          <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+            <div className="w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center mx-auto mb-4">
               <TrendingUp className="w-6 h-6 text-green-primary" />
             </div>
-            <div>
-              <p className="font-bold text-foreground">Mais Rentabilidade</p>
-              <p className="text-sm text-gray-400">4% a 6% ao mês de forma consistente</p>
-            </div>
+            <p className="font-bold text-card-foreground mb-2">MAIS LUCRO</p>
+            <p className="text-sm text-gray-600">4% a 6% ao mês de forma consistente</p>
           </div>
 
-          <div className="flex items-center gap-3 justify-center md:justify-start">
-            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center">
+          <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+            <div className="w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center mx-auto mb-4">
               <Shield className="w-6 h-6 text-green-primary" />
             </div>
-            <div>
-              <p className="font-bold text-foreground">Sem Se Matar de Trabalhar</p>
-              <p className="text-sm text-gray-400">Arquitetura que funciona no automático</p>
-            </div>
+            <p className="font-bold text-card-foreground mb-2">SEM PRECISAR CONTRATAR</p>
+            <p className="text-sm text-gray-600">Arquitetura que funciona no automático</p>
           </div>
 
-          <div className="flex items-center gap-3 justify-center md:justify-start">
-            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center">
+          <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+            <div className="w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center mx-auto mb-4">
               <Clock className="w-6 h-6 text-green-primary" />
             </div>
-            <div>
-              <p className="font-bold text-foreground">Aposentadoria em 7 Anos</p>
-              <p className="text-sm text-gray-400">Não em 30 como o mercado tradicional prega</p>
-            </div>
+            <p className="font-bold text-card-foreground mb-2">APLICAÇÃO IMEDIATA</p>
+            <p className="text-sm text-gray-600">Resultados em 7 anos, não em 30</p>
           </div>
         </div>
 
         {/* Pricing Box */}
-        <div className="max-w-2xl mx-auto bg-card rounded-2xl p-8 md:p-10 shadow-2xl animate-slide-up">
+        <div className="max-w-2xl mx-auto bg-white rounded-2xl p-8 md:p-10 shadow-2xl animate-slide-up border border-gray-200">
           <div className="text-center mb-6">
-            <p className="text-gray-600 line-through text-lg mb-2">De R$ 1.075,00 por apenas:</p>
+            <p className="text-gray-500 line-through text-lg mb-2">De R$ 1.075,00 por apenas:</p>
             <div className="flex items-baseline justify-center gap-3 mb-2">
               <span className="text-5xl md:text-6xl font-bold text-card-foreground">R$ 47</span>
               <span className="text-lg text-gray-600">,00</span>
@@ -90,7 +129,7 @@ export const HeroSection = () => {
 
           {/* Timer */}
           <div className="border-t border-gray-200 pt-6">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm mb-4">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-green-primary" />
                 <span className="font-bold text-card-foreground">
