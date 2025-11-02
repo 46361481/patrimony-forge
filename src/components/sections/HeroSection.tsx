@@ -15,13 +15,13 @@ export const HeroSection = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-12 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black-premium text-white text-sm font-medium w-fit">
             <span className="text-white">Mecanismo de Alavancagem</span>
-            <span className="text-gray-400">WORKSHOP</span>
+            <span className="text-gray-300">WORKSHOP</span>
           </div>
           <div className="flex flex-col md:flex-row gap-3">
-            <div className="px-4 py-2 rounded-full border border-gray-300 bg-white text-sm">
+            <div className="px-4 py-2 rounded-full border border-gray-300 bg-white text-sm text-gray-800 font-medium">
               01, 02 e 03 de Dezembro | Ao Vivo
             </div>
-            <div className="px-4 py-2 rounded-full border border-gray-300 bg-white text-sm">
+            <div className="px-4 py-2 rounded-full border border-gray-300 bg-white text-sm text-gray-800 font-medium">
               Online
             </div>
           </div>
@@ -31,12 +31,12 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 mb-16 items-center">
           {/* Left: Headlines */}
           <div className="animate-slide-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
               3 Dias Construindo Sua{" "}
               <span className="text-gradient-green">Arquitetura Financeira</span>{" "}
               para Alavancar Seu Patrimônio de Forma Estruturada
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
               Domine os 3 mecanismos de alavancagem que transformaram profissionais de alta renda em
               investidores com renda passiva de R$ 30 mil/mês em 7 anos.
             </p>
@@ -81,24 +81,24 @@ export const HeroSection = () => {
             <div className="w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center mx-auto mb-4">
               <TrendingUp className="w-6 h-6 text-green-primary" />
             </div>
-            <p className="font-bold text-card-foreground mb-2">MAIS LUCRO</p>
-            <p className="text-sm text-gray-600">4% a 6% ao mês de forma consistente</p>
+            <p className="font-bold text-gray-900 mb-2">MAIS LUCRO</p>
+            <p className="text-sm text-gray-700">4% a 6% ao mês de forma consistente</p>
           </div>
 
           <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
             <div className="w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center mx-auto mb-4">
               <Shield className="w-6 h-6 text-green-primary" />
             </div>
-            <p className="font-bold text-card-foreground mb-2">SEM PRECISAR CONTRATAR</p>
-            <p className="text-sm text-gray-600">Arquitetura que funciona no automático</p>
+            <p className="font-bold text-gray-900 mb-2">SEM PRECISAR CONTRATAR</p>
+            <p className="text-sm text-gray-700">Arquitetura que funciona no automático</p>
           </div>
 
           <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
             <div className="w-12 h-12 rounded-full bg-green-primary/10 flex items-center justify-center mx-auto mb-4">
               <Clock className="w-6 h-6 text-green-primary" />
             </div>
-            <p className="font-bold text-card-foreground mb-2">APLICAÇÃO IMEDIATA</p>
-            <p className="text-sm text-gray-600">Resultados em 7 anos, não em 30</p>
+            <p className="font-bold text-gray-900 mb-2">APLICAÇÃO IMEDIATA</p>
+            <p className="text-sm text-gray-700">Resultados em 7 anos, não em 30</p>
           </div>
         </div>
 
@@ -107,16 +107,16 @@ export const HeroSection = () => {
           <div className="text-center mb-6">
             <p className="text-gray-500 line-through text-lg mb-2">De R$ 1.075,00 por apenas:</p>
             <div className="flex items-baseline justify-center gap-3 mb-2">
-              <span className="text-5xl md:text-6xl font-bold text-card-foreground">R$ 47</span>
-              <span className="text-lg text-gray-600">,00</span>
+              <span className="text-5xl md:text-6xl font-bold text-gray-900">R$ 47</span>
+              <span className="text-lg text-gray-700">,00</span>
             </div>
-            <p className="text-gray-600">ou 12x de R$ 4,59</p>
+            <p className="text-gray-700">ou 12x de R$ 4,59</p>
           </div>
 
           {/* Progress Bar */}
           <div className="mb-8">
             <div className="flex justify-between items-center mb-2">
-              <span className="text-sm text-gray-600">🔥 Ingressos vendidos</span>
+              <span className="text-sm text-gray-700 font-medium">🔥 Ingressos vendidos</span>
               <span className="text-sm font-bold text-green-primary">73%</span>
             </div>
             <ProgressBar progress={73} />
@@ -132,11 +132,11 @@ export const HeroSection = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm mb-4">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-green-primary" />
-                <span className="font-bold text-card-foreground">
+                <span className="font-bold text-gray-900">
                   Última Turma — Nunca Mais Será Oferecido
                 </span>
               </div>
-              <div className="text-gray-600">📅 01, 02 e 03 de Dezembro | 20h — Ao Vivo no Zoom</div>
+              <div className="text-gray-700 font-medium">📅 01, 02 e 03 de Dezembro | 20h — Ao Vivo no Zoom</div>
             </div>
             <CountdownTimer targetDate="2025-12-01T20:00:00" />
           </div>
