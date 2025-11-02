@@ -28,7 +28,7 @@ export const HeroSection = () => {
         </div>
 
         {/* Main content grid */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 mb-8 items-center">
           {/* Left: Headlines */}
           <div className="animate-slide-up">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-gray-900">
