@@ -31,7 +31,7 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 mb-16 items-center">
           {/* Left: Headlines */}
           <div className="animate-slide-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-gray-900">
               3 Dias Construindo Sua{" "}
               <span className="text-gradient-green">Arquitetura Financeira</span>{" "}
               para Alavancar Seu Patrimônio de Forma Estruturada
