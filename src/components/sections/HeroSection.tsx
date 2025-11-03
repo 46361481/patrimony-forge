@@ -70,10 +70,10 @@ export const HeroSection = () => {
             </div>
             
             {/* Progress Text */}
-            <p className="text-sm text-white font-medium mb-4">73% das vagas preenchidas</p>
+            <p className="text-sm text-white font-medium mb-1">73% das vagas preenchidas</p>
 
             {/* Última Turma */}
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center justify-center gap-2 mb-4">
               <Clock className="w-4 h-4 text-red-500" />
               <span className="text-sm font-bold text-red-500">
                 Última turma - Nunca Mais Será Oferecido
