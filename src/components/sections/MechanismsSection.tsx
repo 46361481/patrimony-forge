@@ -9,7 +9,7 @@ export const MechanismsSection = () => {
     icon: DollarSign,
     number: "#2",
     title: "Renda Consistente",
-    description: "Transformar ativos em geradores de 4% a 6% ao mês — previsível e replicável."
+    description: "Transformar ativos em geradores de patrimônio— previsível e replicável."
   }, {
     icon: TrendingUp,
     number: "#3",
