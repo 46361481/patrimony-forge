@@ -5,7 +5,9 @@ import { ProgressBar } from "@/components/ui/progress-bar";
 import rhuanHero from "@/assets/rhuan-hero.jpg";
 export const HeroSection = () => {
   return <section className="relative min-h-screen bg-black text-white py-4 md:py-8 overflow-hidden">
-      <div className="container mx-auto max-w-7xl px-4">
+      {/* Black background overlay to ensure solid black */}
+      <div className="absolute inset-0 bg-black z-0" />
+      <div className="container mx-auto max-w-7xl px-4 relative z-10">
         {/* Main content grid */}
         <div className="grid lg:grid-cols-[60%_40%] gap-0 mb-8 items-center min-h-[90vh]">
           {/* Left: Headlines and CTA with gradient background */}
