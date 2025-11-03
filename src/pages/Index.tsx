@@ -1,3 +1,4 @@
+import { TopBar } from "@/components/sections/TopBar";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { QualificationSection } from "@/components/sections/QualificationSection";
 import { TruthSection } from "@/components/sections/TruthSection";
@@ -15,6 +16,7 @@ import { FooterSection } from "@/components/sections/FooterSection";
 const Index = () => {
   return (
     <main className="min-h-screen">
+      <TopBar />
       <HeroSection />
       <QualificationSection />
       <TruthSection />
