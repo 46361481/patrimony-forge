@@ -32,8 +32,8 @@ export const FinalCTASection = () => {
             </div>
           </div>
 
-          <div className="flex justify-center">
-            <Button variant="cta" size="xl" className="px-12 animate-pulse-green">
+          <div className="flex justify-center px-4">
+            <Button variant="cta" size="xl" className="px-6 md:px-12 animate-pulse-green text-sm md:text-base w-full md:w-auto">
               QUERO GARANTIR MINHA PARTICIPAÇÃO
             </Button>
           </div>
