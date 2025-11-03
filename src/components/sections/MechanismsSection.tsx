@@ -32,7 +32,7 @@ export const MechanismsSection = () => {
               </div>
               <div className="mb-4">
                 <span className="text-green-primary font-bold text-lg">Mecanismo {mechanism.number}</span>
-                <h3 className="text-2xl font-bold text-card-foreground mt-2">{mechanism.title}</h3>
+                <h3 className="text-2xl font-bold text-white mt-2">{mechanism.title}</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">{mechanism.description}</p>
             </div>)}
