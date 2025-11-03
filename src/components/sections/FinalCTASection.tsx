@@ -3,7 +3,7 @@ import { Calendar, Video } from "lucide-react";
 
 export const FinalCTASection = () => {
   return (
-    <section className="py-16 md:py-24 px-4 bg-black-premium text-foreground">
+    <section id="inscricao" className="py-16 md:py-24 px-4 bg-black-premium text-foreground">
       <div className="container mx-auto max-w-4xl text-center">
         <div className="animate-fade-in space-y-8">
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">

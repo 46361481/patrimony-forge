@@ -68,7 +68,12 @@ export const HeroSection = () => {
             </div>
 
             {/* CTA Button */}
-            <Button variant="cta" size="xl" className="max-w-xl w-full mb-4 animate-pulse-green text-base md:text-lg font-bold">
+            <Button 
+              variant="cta" 
+              size="xl" 
+              className="max-w-xl w-full mb-4 animate-pulse-green text-base md:text-lg font-bold"
+              onClick={() => document.getElementById('inscricao')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               QUERO GARANTIR MINHA PARTICIPAÇÃO
             </Button>
 
