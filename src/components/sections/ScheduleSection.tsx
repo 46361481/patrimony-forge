@@ -15,8 +15,8 @@ export const ScheduleSection = () => {
       day: "Dia 2 (02/12)",
       title: "Máquina de Fazer Dinheiro",
       topics: [
-        "Mecanismo #2: Transformar investimentos em geradores automáticos",
-        'Como criar "dividendos sintéticos" de 4-6% ao mês',
+        "Mecanismo #2: Transformar investimentos em geradores de renda automáticos",
+        'Como criar "patrimonio” geradores de renda passiva. ',
         "Demonstração prática para implementar imediatamente",
       ],
     },
