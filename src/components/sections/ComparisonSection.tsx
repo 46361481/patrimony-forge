@@ -10,7 +10,7 @@ export const ComparisonSection = () => {
   ];
 
   const with_ = [
-    "R$ 25.000/mês com os mesmos R$ 500k",
+    "Dobre sua rentabilidade com os mesmos R$ 500k",
     "Estrutura auto-sustentável",
     "7 anos para renda vitalícia",
     "Rendimentos de 4% a 6% ao mês",
