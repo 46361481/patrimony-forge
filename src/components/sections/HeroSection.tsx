@@ -72,9 +72,7 @@ seu capital inicial.</p>
             {/* Última Turma */}
             <div className="flex items-center gap-2 mb-4">
               <Clock className="w-4 h-4 text-red-500" />
-              <span className="text-sm font-bold text-red-500">
-                Última turma - Nunca Mais Será Oferecido
-              </span>
+              <span className="text-sm font-bold text-red-500">PRIMEIRO LOTE</span>
             </div>
 
             {/* CTA Button */}
