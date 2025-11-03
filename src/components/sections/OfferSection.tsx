@@ -28,7 +28,7 @@ export const OfferSection = () => {
                   <Check className="w-5 h-5 text-green-primary flex-shrink-0" />
                   <span className="text-white">{item.name}</span>
                 </div>
-                <span className="font-semibold text-gray-600">{item.value}</span>
+                <span className="font-semibold text-white">{item.value}</span>
               </div>
             ))}
           </div>
