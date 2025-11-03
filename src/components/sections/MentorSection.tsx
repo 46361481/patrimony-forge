@@ -11,7 +11,7 @@ export const MentorSection = () => {
               <img
                 src={rhuanPhoto}
                 alt="Rhuan Christo"
-                className="w-full h-full object-cover object-[center_80%]"
+                className="w-full h-full object-cover object-[center_85%]"
               />
             </div>
           </div>
