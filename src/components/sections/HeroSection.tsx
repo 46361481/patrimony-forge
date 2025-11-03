@@ -114,7 +114,7 @@ transformaram profissionais de alta renda em investidores com renda passiva de R
               <TrendingUp className="w-6 h-6 text-green-primary" />
             </div>
             <p className="font-bold text-white mb-2">✓ Mais Rentabilidade</p>
-            <p className="text-sm text-gray-200">4% a 6% ao mês de forma consistente</p>
+            <p className="text-sm text-gray-200">Você é capaz de dobrar sua rentabilidade de forma consistente</p>
           </div>
 
           <div className="text-center p-6 bg-white/10 rounded-xl shadow-sm border border-white/20 backdrop-blur-sm">
