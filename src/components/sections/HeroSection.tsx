@@ -12,13 +12,28 @@ export const HeroSection = () => {
         
         {/* Right 40% - Photo Background */}
         <div 
-          className="w-[40%] bg-black" 
+          className="w-[40%] bg-black relative" 
           style={{
             backgroundImage: `url(${rhuanHero})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
-        ></div>
+        >
+          {/* Gradient overlay - transição suave do preto para a foto */}
+          <div 
+            className="absolute inset-0"
+            style={{
+              background: 'linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 30%, transparent 100%)',
+            }}
+          ></div>
+          {/* Sombra interna para profundidade */}
+          <div 
+            className="absolute inset-0"
+            style={{
+              boxShadow: 'inset -20px 0 60px -20px rgba(0, 0, 0, 0.8)',
+            }}
+          ></div>
+        </div>
       </div>
       
       <div className="container mx-auto max-w-7xl relative z-10 py-4 md:py-8 px-4">
