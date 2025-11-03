@@ -6,13 +6,13 @@ import rhuanHero from "@/assets/rhuan-hero.jpg";
 export const HeroSection = () => {
   return <section className="relative min-h-screen overflow-hidden bg-black">
       {/* Split background: 60% black + 40% photo */}
-      <div className="absolute inset-0 flex">
+      <div className="absolute inset-0 flex bg-black">
         {/* Left 60% - Solid Black */}
         <div className="w-[60%] bg-black"></div>
         
         {/* Right 40% - Photo Background */}
         <div 
-          className="w-[40%]" 
+          className="w-[40%] bg-black" 
           style={{
             backgroundImage: `url(${rhuanHero})`,
             backgroundSize: 'cover',
@@ -21,7 +21,7 @@ export const HeroSection = () => {
         ></div>
       </div>
       
-      <div className="container mx-auto max-w-7xl relative z-10 py-4 md:py-8 px-4 bg-black">
+      <div className="container mx-auto max-w-7xl relative z-10 py-4 md:py-8 px-4">
         {/* Main content */}
         <div className="max-w-3xl mb-8">
           {/* Headlines and CTA */}
