@@ -46,7 +46,7 @@ export const TestimonialsSection = () => {
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-bold text-card-foreground">{testimonial.author}</p>
+                  <p className="font-bold text-green-primary">{testimonial.author}</p>
                   <p className="text-sm text-white">{testimonial.role}</p>
                 </div>
               </div>
