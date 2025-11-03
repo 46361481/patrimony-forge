@@ -6,19 +6,19 @@ import rhuanHero from "@/assets/rhuan-hero-new.jpg";
 export const HeroSection = () => {
   return <section className="relative min-h-screen overflow-hidden overflow-x-hidden bg-black">
       {/* Mobile background - Split layout */}
-      <div className="absolute inset-0 md:hidden flex flex-col bg-black">
-        {/* Top 20% - Solid Black */}
-        <div className="h-[20%] bg-black"></div>
+      <div className="absolute inset-0 md:hidden flex bg-black">
+        {/* Left 20% - Solid Black */}
+        <div className="w-[20%] bg-black"></div>
         
-        {/* Bottom 80% - Photo Background */}
-        <div className="h-[80%] bg-black relative" style={{
+        {/* Right 80% - Photo Background */}
+        <div className="w-[80%] bg-black relative" style={{
           backgroundImage: `url(${rhuanHero})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}>
           {/* Gradient overlay */}
           <div className="absolute inset-0" style={{
-            background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 30%, transparent 100%)'
+            background: 'linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 30%, transparent 100%)'
           }}></div>
         </div>
       </div>
