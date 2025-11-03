@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Premium Dark Theme - Investment Landing Page */
-    --background: 0 0% 100%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
 
     /* Black premium background */
