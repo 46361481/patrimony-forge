@@ -5,16 +5,22 @@ import { ProgressBar } from "@/components/ui/progress-bar";
 import rhuanHero from "@/assets/rhuan-hero-new.jpg";
 export const HeroSection = () => {
   return <section className="relative min-h-screen overflow-hidden overflow-x-hidden bg-black">
-      {/* Mobile background - Full photo with gradient overlay */}
-      <div className="absolute inset-0 md:hidden bg-black" style={{
-        backgroundImage: `url(${rhuanHero})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
-        {/* Dark gradient overlay for mobile */}
-        <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.85) 100%)'
-        }}></div>
+      {/* Mobile background - Split layout */}
+      <div className="absolute inset-0 md:hidden flex flex-col bg-black">
+        {/* Top 60% - Solid Black */}
+        <div className="h-[60%] bg-black"></div>
+        
+        {/* Bottom 40% - Photo Background */}
+        <div className="h-[40%] bg-black relative" style={{
+          backgroundImage: `url(${rhuanHero})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}>
+          {/* Gradient overlay */}
+          <div className="absolute inset-0" style={{
+            background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 30%, transparent 100%)'
+          }}></div>
+        </div>
       </div>
 
       {/* Desktop Split background: 60% black + 40% photo */}
