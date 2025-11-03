@@ -47,7 +47,7 @@ export const OfferSection = () => {
           </div>
 
           <div className="flex justify-center px-4">
-            <Button variant="cta" size="xl" className="px-8 md:px-16 animate-pulse-green text-sm sm:text-base md:text-lg w-full md:w-auto leading-tight">
+            <Button variant="cta" size="xl" className="px-12 md:px-20 animate-pulse-green text-sm sm:text-base md:text-lg w-full md:w-auto leading-tight">
               <span className="flex flex-col items-center">
                 <span>QUERO GARANTIR</span>
                 <span>MINHA PARTICIPAÇÃO</span>
