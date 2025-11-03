@@ -65,6 +65,13 @@ export const HeroSection = () => {
               QUERO GARANTIR MINHA PARTICIPAÇÃO
             </Button>
 
+            {/* Pricing Info */}
+            <div className="max-w-xl mb-4 text-center">
+              <p className="text-sm text-gray-300 line-through mb-1">De R$ 1.075,00 por apenas:</p>
+              <p className="text-4xl md:text-5xl font-bold text-green-primary mb-1">R$ 47,00</p>
+              <p className="text-sm text-gray-200">ou 12x de R$ 4,59</p>
+            </div>
+
             {/* Última Turma */}
             <div className="flex items-center justify-center gap-2">
               <Clock className="w-4 h-4 text-gray-100" />
