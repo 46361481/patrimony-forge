@@ -51,13 +51,12 @@ export const HeroSection = () => {
               investidores com renda passiva de R$ 30 mil/mês em 7 anos — sem depender de sorte, timing de mercado ou aumentar seu capital inicial.
             </p>
 
-            {/* Progress Bar */}
-            <div className="mb-4 max-w-xl">
-              <div className="flex justify-between items-center mb-3">
-                <span className="text-sm text-gray-100 font-medium">🔥 Ingressos vendidos</span>
-                <span className="text-sm font-bold text-green-primary">73%</span>
-              </div>
-              <ProgressBar progress={73} />
+            {/* Pricing - Apenas R$ 47 */}
+            <div className="mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold">
+                <span className="text-white">Apenas </span>
+                <span className="text-green-primary">R$ 47</span>
+              </h2>
             </div>
 
             {/* CTA Button */}
@@ -65,18 +64,19 @@ export const HeroSection = () => {
               QUERO GARANTIR MINHA PARTICIPAÇÃO
             </Button>
 
-            {/* Pricing Info */}
-            <div className="max-w-xl mb-4 text-center">
-              <p className="text-xs text-gray-300 line-through mb-1">De R$ 1.075,00 por apenas:</p>
-              <p className="text-2xl md:text-3xl font-bold text-green-primary mb-1">R$ 47,00</p>
-              <p className="text-xs text-gray-200">ou 12x de R$ 4,59</p>
+            {/* Progress Bar */}
+            <div className="mb-2 max-w-xl">
+              <ProgressBar progress={73} />
             </div>
+            
+            {/* Progress Text */}
+            <p className="text-sm text-white font-medium mb-4">73% das vagas preenchidas</p>
 
             {/* Última Turma */}
             <div className="flex items-center justify-center gap-2">
-              <Clock className="w-4 h-4 text-gray-100" />
-              <span className="text-sm font-bold text-white">
-                Última Turma — Nunca Mais Será Oferecido
+              <Clock className="w-4 h-4 text-red-500" />
+              <span className="text-sm font-bold text-red-500">
+                Última turma - Nunca Mais Será Oferecido
               </span>
             </div>
           </div>
