@@ -52,7 +52,7 @@ export const HeroSection = () => {
             </p>
 
             {/* Progress Bar */}
-            <div className="mb-4">
+            <div className="mb-4 max-w-xl">
               <div className="flex justify-between items-center mb-3">
                 <span className="text-sm text-gray-100 font-medium">🔥 Ingressos vendidos</span>
                 <span className="text-sm font-bold text-green-primary">73%</span>
@@ -61,7 +61,7 @@ export const HeroSection = () => {
             </div>
 
             {/* CTA Button */}
-            <Button variant="cta" size="xl" className="w-full mb-4 animate-pulse-green text-base md:text-lg font-bold">
+            <Button variant="cta" size="xl" className="max-w-xl w-full mb-4 animate-pulse-green text-base md:text-lg font-bold">
               QUERO GARANTIR MINHA PARTICIPAÇÃO
             </Button>
 
