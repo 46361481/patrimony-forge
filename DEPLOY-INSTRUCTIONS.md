@@ -82,11 +82,72 @@ Em vez de:
 
 ## 🔧 Configuração do GitHub Pages (se aplicável)
 
-1. Vá nas configurações do seu repositório no GitHub
-2. Seção "Pages"
-3. Selecione "GitHub Actions" como source
-4. O deploy será automático a cada push
+**IMPORTANTE: Configurações necessárias no seu repositório GitHub:**
+
+### 1. Habilitar GitHub Pages
+1. Vá nas **Settings** do seu repositório no GitHub
+2. Seção **"Pages"** (no menu lateral esquerdo)
+3. Em **"Source"**, selecione **"GitHub Actions"**
+4. Salve as configurações
+
+### 2. Verificar Permissões do GitHub Actions
+1. Ainda em **Settings**, vá em **"Actions"** → **"General"**
+2. Em **"Workflow permissions"**, selecione:
+   - ✅ **"Read and write permissions"**
+   - ✅ **"Allow GitHub Actions to create and approve pull requests"**
+3. Clique em **"Save"**
+
+### 3. Workflows Disponíveis
+Criamos dois workflows para você:
+
+**Workflow Principal:** `.github/workflows/deploy.yml`
+- Usa a abordagem mais moderna do GitHub Pages
+- Recomendado para novos repositórios
+
+**Workflow Alternativo:** `.github/workflows/deploy-alternative.yml`
+- Usa peaceiris/actions-gh-pages@v4
+- Backup caso o principal não funcione
+
+### 4. Ativar o Workflow
+- O deploy será automático a cada push para `main`/`master`
+- Se houver problemas, desative um dos workflows renomeando a extensão para `.yml.disabled`
 
 ---
+
+---
+
+## 🔧 Troubleshooting - Problemas Comuns
+
+### ❌ Erro: "Permission denied to github-actions[bot]"
+**Solução:**
+1. Vá em **Settings** → **Actions** → **General**
+2. Altere **"Workflow permissions"** para **"Read and write permissions"**
+3. Marque **"Allow GitHub Actions to create and approve pull requests"**
+4. Salve e tente novamente
+
+### ❌ Erro: "Pages build and deployment"
+**Solução:**
+1. Vá em **Settings** → **Pages**
+2. Certifique-se que **"Source"** está como **"GitHub Actions"**
+3. Se estiver como "Deploy from a branch", mude para "GitHub Actions"
+
+### ❌ Workflow não executa
+**Solução:**
+1. Verifique se o arquivo está em `.github/workflows/deploy.yml`
+2. Certifique-se que fez push para a branch `main` ou `master`
+3. Vá na aba **"Actions"** do GitHub para ver os logs
+
+### ❌ Site não carrega após deploy
+**Solução:**
+1. Verifique se o build local funciona: `npm run build && npm run preview`
+2. Confirme que os arquivos estão na pasta `dist/`
+3. Verifique se não há erros no console do navegador
+
+### 🔄 Forçar novo deploy
+Se precisar forçar um novo deploy:
+```bash
+git commit --allow-empty -m "Force deploy"
+git push origin main
+```
 
 **Problema resolvido!** ✅ Agora seu site será publicado com os arquivos de produção corretos, compatíveis com qualquer servidor web.
