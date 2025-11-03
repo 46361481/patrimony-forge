@@ -6,20 +6,11 @@ import heroPerson1 from "@/assets/hero-person-1.jpg";
 import heroPerson2 from "@/assets/hero-person-2.jpg";
 import heroPerson3 from "@/assets/hero-person-3.jpg";
 import heroPerson4 from "@/assets/hero-person-4.jpg";
-
 export const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen bg-gray-50 text-foreground py-4 md:py-8 px-4">
+  return <section className="relative min-h-screen bg-gray-50 text-foreground py-4 md:py-8 px-4">
       <div className="container mx-auto max-w-7xl">
         {/* Top info badges */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-end gap-3 mb-4 animate-fade-in">
-          <div className="px-4 py-2 rounded-full border border-gray-300 bg-white text-sm text-gray-800 font-medium">
-            01, 02 e 03 de Dezembro | Ao Vivo
-          </div>
-          <div className="px-4 py-2 rounded-full border border-gray-300 bg-white text-sm text-gray-800 font-medium">
-            Online
-          </div>
-        </div>
+        
 
         {/* Main content grid */}
         <div className="grid lg:grid-cols-2 gap-12 mb-8 items-start">
@@ -61,32 +52,16 @@ export const HeroSection = () => {
           {/* Right: Photo grid */}
           <div className="grid grid-cols-2 gap-4 animate-fade-in">
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={heroPerson1}
-                alt="Investidor 1"
-                className="w-full h-full object-cover aspect-square"
-              />
+              <img src={heroPerson1} alt="Investidor 1" className="w-full h-full object-cover aspect-square" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
-              <img
-                src={heroPerson2}
-                alt="Investidor 2"
-                className="w-full h-full object-cover aspect-square"
-              />
+              <img src={heroPerson2} alt="Investidor 2" className="w-full h-full object-cover aspect-square" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg -mt-8">
-              <img
-                src={heroPerson3}
-                alt="Investidor 3"
-                className="w-full h-full object-cover aspect-square"
-              />
+              <img src={heroPerson3} alt="Investidor 3" className="w-full h-full object-cover aspect-square" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={heroPerson4}
-                alt="Investidor 4"
-                className="w-full h-full object-cover aspect-square"
-              />
+              <img src={heroPerson4} alt="Investidor 4" className="w-full h-full object-cover aspect-square" />
             </div>
           </div>
         </div>
@@ -119,6 +94,5 @@ export const HeroSection = () => {
         </div>
 
       </div>
-    </section>
-  );
+    </section>;
 };
