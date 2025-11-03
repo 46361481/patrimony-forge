@@ -33,11 +33,13 @@ export const FinalCTASection = () => {
           </div>
 
           <div className="flex justify-center px-4">
-            <Button variant="cta" size="xl" className="px-6 md:px-12 animate-pulse-green text-sm sm:text-base md:text-lg w-full md:w-auto leading-tight">
-              <span className="flex flex-col items-center">
-                <span>QUERO GARANTIR</span>
-                <span>MINHA PARTICIPAÇÃO</span>
-              </span>
+            <Button variant="cta" size="xl" className="px-6 md:px-12 animate-pulse-green text-sm sm:text-base md:text-lg w-full md:w-auto leading-tight" asChild>
+              <a href="https://checkout.pagtrust.com.br/ckb610b099?funnel=fn5ec5bfc0" target="_blank" rel="noopener noreferrer">
+                <span className="flex flex-col items-center">
+                  <span>QUERO GARANTIR</span>
+                  <span>MINHA PARTICIPAÇÃO</span>
+                </span>
+              </a>
             </Button>
           </div>
 
