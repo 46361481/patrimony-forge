@@ -65,11 +65,9 @@ ou aumentar  seu capital inicial.</p>
             
             {/* Tablet/Desktop version */}
             <p className="hidden md:block text-xl text-gray-100 leading-relaxed mb-8">
-              Domine os 3 mecanismos de alavancagem que<br />
-              transformaram profissionais de alta renda<br />
-              em investidores com renda passiva de R$ 30 mil/mês<br />
-              em 7 anos sem depender de sorte, timing de mercado<br />
-              ou aumentar seu capital inicial.
+              Domine os 3 mecanismos de alavancagem que transformaram profissionais de alta<br />
+              renda em investidores com renda passiva de R$ 30 mil/mês em 7 anos sem depender<br />
+              de sorte, timing de mercado ou aumentar seu capital inicial.
             </p>
 
             {/* Pricing - Apenas R$ 47 */}
