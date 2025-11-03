@@ -10,10 +10,10 @@ export const ComparisonSection = () => {
   ];
 
   const with_ = [
-    "Rendimentos acima da média",
+    "Dobre sua rentabilidade com os mesmos R$ 500k",
     "Estrutura auto-sustentável",
     "7 anos para renda vitalícia",
-    "Rendimentos de 4% a 6% ao mês",
+    "Rendimentos acima da média",
     "Checklist de implementação imediato",
   ];
 
