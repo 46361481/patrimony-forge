@@ -4,7 +4,7 @@ import { CountdownTimer } from "@/components/ui/countdown-timer";
 import { ProgressBar } from "@/components/ui/progress-bar";
 import rhuanHero from "@/assets/rhuan-hero.jpg";
 export const HeroSection = () => {
-  return <section className="relative min-h-screen overflow-hidden">
+  return <section className="relative min-h-screen overflow-hidden bg-black">
       {/* Split background: 60% black + 40% photo */}
       <div className="absolute inset-0 flex">
         {/* Left 60% - Solid Black */}
