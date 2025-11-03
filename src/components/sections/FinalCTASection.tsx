@@ -32,9 +32,11 @@ export const FinalCTASection = () => {
             </div>
           </div>
 
-          <Button variant="cta" size="xl" className="px-12 animate-pulse-green">
-            QUERO GARANTIR MINHA PARTICIPAÇÃO
-          </Button>
+          <div className="flex justify-center">
+            <Button variant="cta" size="xl" className="px-12 animate-pulse-green">
+              QUERO GARANTIR MINHA PARTICIPAÇÃO
+            </Button>
+          </div>
 
           <p className="text-sm text-gray-500 max-w-2xl mx-auto pt-8">
             Evento direcionado exclusivamente para investidores qualificados. O investimento de R$47
