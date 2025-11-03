@@ -11,28 +11,19 @@ export const HeroSection = () => {
         <div className="w-[60%] bg-black"></div>
         
         {/* Right 40% - Photo Background */}
-        <div 
-          className="w-[40%] bg-black relative"
-          style={{
-            backgroundImage: `url(${rhuanHero})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
+        <div className="w-[40%] bg-black relative" style={{
+        backgroundImage: `url(${rhuanHero})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
           {/* Gradient overlay - transição suave do preto para a foto */}
-          <div 
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 30%, transparent 100%)',
-            }}
-          ></div>
+          <div className="absolute inset-0" style={{
+          background: 'linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 30%, transparent 100%)'
+        }}></div>
           {/* Sombra interna para profundidade */}
-          <div 
-            className="absolute inset-0"
-            style={{
-              boxShadow: 'inset -20px 0 60px -20px rgba(0, 0, 0, 0.8)',
-            }}
-          ></div>
+          <div className="absolute inset-0" style={{
+          boxShadow: 'inset -20px 0 60px -20px rgba(0, 0, 0, 0.8)'
+        }}></div>
         </div>
       </div>
       
@@ -46,10 +37,8 @@ export const HeroSection = () => {
               <span className="text-gradient-green">Arquitetura Financeira</span>{" "}
               para Alavancar Seu Patrimônio de Forma Estruturada
             </h1>
-            <p className="text-lg md:text-xl text-gray-100 leading-relaxed mb-8">
-              Domine os 3 mecanismos de alavancagem que transformaram profissionais de alta renda em
-              investidores com renda passiva de R$ 30 mil/mês em 7 anos — sem depender de sorte, timing de mercado ou aumentar seu capital inicial.
-            </p>
+            <p className="text-lg md:text-xl text-gray-100 leading-relaxed mb-8">Domine os 3 mecanismos de alavancagem 
+que transformaram profissionais de alta renda em investidores com renda passiva de R$ 30 mil/mês em 7 anos — sem depender de sorte, timing de mercado ou aumentar seu capital inicial.</p>
 
             {/* Pricing - Apenas R$ 47 */}
             <div className="mb-2">
@@ -68,12 +57,9 @@ export const HeroSection = () => {
             </div>
 
             {/* CTA Button */}
-            <Button 
-              variant="cta" 
-              size="xl" 
-              className="max-w-xl w-full mb-4 animate-pulse-green text-base md:text-lg font-bold"
-              onClick={() => document.getElementById('inscricao')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+            <Button variant="cta" size="xl" className="max-w-xl w-full mb-4 animate-pulse-green text-base md:text-lg font-bold" onClick={() => document.getElementById('inscricao')?.scrollIntoView({
+            behavior: 'smooth'
+          })}>
               QUERO GARANTIR MINHA PARTICIPAÇÃO
             </Button>
 
