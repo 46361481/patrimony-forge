@@ -31,7 +31,7 @@ export const MechanismsSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-card-foreground">
           Nos dias 01, 02 e 03 de dezembro,
         </h2>
-        <p className="text-xl text-center text-gray-600 mb-16">
+        <p className="text-xl text-center text-white mb-16">
           Rhuan Christo revelará:
         </p>
 
@@ -49,7 +49,7 @@ export const MechanismsSection = () => {
                 <span className="text-green-primary font-bold text-lg">Mecanismo {mechanism.number}</span>
                 <h3 className="text-2xl font-bold text-card-foreground mt-2">{mechanism.title}</h3>
               </div>
-              <p className="text-gray-600 leading-relaxed">{mechanism.description}</p>
+              <p className="text-white leading-relaxed">{mechanism.description}</p>
             </div>
           ))}
         </div>

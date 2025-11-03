@@ -25,7 +25,7 @@ export const QualificationSection = () => {
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-primary/10 flex items-center justify-center">
                 <Check className="w-5 h-5 text-green-primary" />
               </div>
-              <p className="text-gray-700 leading-relaxed">{item}</p>
+              <p className="text-white leading-relaxed">{item}</p>
             </div>
           ))}
         </div>
