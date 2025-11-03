@@ -4,15 +4,24 @@ import { CountdownTimer } from "@/components/ui/countdown-timer";
 import { ProgressBar } from "@/components/ui/progress-bar";
 import rhuanHero from "@/assets/rhuan-hero.jpg";
 export const HeroSection = () => {
-  return <section className="relative min-h-screen py-4 md:py-8 px-4" style={{
-    backgroundImage: `url(${rhuanHero})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}>
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/60 z-0"></div>
+  return <section className="relative min-h-screen overflow-hidden">
+      {/* Split background: 60% black + 40% photo */}
+      <div className="absolute inset-0 flex">
+        {/* Left 60% - Solid Black */}
+        <div className="w-[60%] bg-black"></div>
+        
+        {/* Right 40% - Photo Background */}
+        <div 
+          className="w-[40%]" 
+          style={{
+            backgroundImage: `url(${rhuanHero})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        ></div>
+      </div>
       
-      <div className="container mx-auto max-w-7xl relative z-10">
+      <div className="container mx-auto max-w-7xl relative z-10 py-4 md:py-8 px-4">
         {/* Main content */}
         <div className="max-w-3xl mb-8">
           {/* Headlines and CTA */}
