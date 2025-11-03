@@ -1,0 +1,194 @@
+════════════════════════════════════════════════════════
+INSTRUÇÕES DE INSTALAÇÃO - TEMA RHUAN CHRISTO VSL
+════════════════════════════════════════════════════════
+
+📋 PASSO A PASSO PARA INSTALAÇÃO NO WORDPRESS
+
+1️⃣ PREPARAÇÃO DOS ARQUIVOS
+   - Copie todos os arquivos desta pasta (wordpress-theme)
+   - Crie um arquivo .zip contendo todos os arquivos
+   - OU: Faça upload via FTP para /wp-content/themes/rhuan-vsl/
+
+2️⃣ INSTALAÇÃO VIA PAINEL WORDPRESS
+   a) Acesse seu WordPress (seusite.com/wp-admin)
+   b) Vá em: Aparência > Temas > Adicionar Novo
+   c) Clique em "Enviar Tema"
+   d) Selecione o arquivo .zip
+   e) Clique em "Instalar Agora"
+   f) Após instalação, clique em "Ativar"
+
+3️⃣ OU INSTALAÇÃO VIA FTP
+   a) Conecte-se ao seu servidor via FTP
+   b) Navegue até: /wp-content/themes/
+   c) Crie uma pasta chamada "rhuan-vsl"
+   d) Faça upload de todos os arquivos para essa pasta
+   e) No WordPress, vá em Aparência > Temas
+   f) Ative o tema "Rhuan Christo - Método VSL"
+
+════════════════════════════════════════════════════════
+📁 ESTRUTURA DE ARQUIVOS
+════════════════════════════════════════════════════════
+
+rhuan-vsl/
+├── style.css                    (Estilos principais - OBRIGATÓRIO)
+├── functions.php                (Funções do tema - OBRIGATÓRIO)
+├── index.php                    (Template principal - OBRIGATÓRIO)
+├── header.php                   (Cabeçalho)
+├── footer.php                   (Rodapé)
+├── page-landing.php             (Template de Landing Page)
+├── js/
+│   └── main.js                  (JavaScript)
+└── README.txt                   (Informações do tema)
+
+════════════════════════════════════════════════════════
+⚙️ CONFIGURAÇÃO INICIAL
+════════════════════════════════════════════════════════
+
+1. CRIAR MENU
+   - Vá em: Aparência > Menus
+   - Crie um novo menu chamado "Menu Principal"
+   - Adicione os links desejados
+   - Em "Configurações do Menu", marque "Menu Principal"
+   - Salve o menu
+
+2. CONFIGURAR LOGO
+   - Vá em: Aparência > Personalizar > Identidade do Site
+   - Faça upload do seu logo
+   - Ajuste as configurações
+   - Publique
+
+3. CRIAR PÁGINA DE LANDING
+   - Vá em: Páginas > Adicionar Nova
+   - Título: "Home" ou "Página de Vendas"
+   - No lado direito, em "Atributos da Página"
+   - Selecione: Template: "Landing Page"
+   - Preencha os campos personalizados:
+     * Seção Hero (Título, Subtítulo, Botão)
+     * Seção CTA (Call-to-Action)
+   - Adicione seu conteúdo no editor
+   - Publique
+
+4. DEFINIR PÁGINA INICIAL
+   - Vá em: Configurações > Leitura
+   - Marque: "Uma página estática"
+   - Em "Página Inicial", selecione a página criada
+   - Salve as alterações
+
+════════════════════════════════════════════════════════
+🎨 PERSONALIZAÇÃO
+════════════════════════════════════════════════════════
+
+CORES
+Edite o arquivo style.css e altere as variáveis CSS:
+--primary: Cor principal
+--secondary: Cor secundária
+--accent: Cor de destaque
+
+FONTES
+Adicione no functions.php:
+wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=SuaFonte&display=swap');
+
+BOTÃO CTA
+Personalize a cor do botão de CTA em style.css:
+.btn-cta { background: linear-gradient(135deg, #SuaCor1, #SuaCor2); }
+
+════════════════════════════════════════════════════════
+🔧 CAMPOS PERSONALIZADOS
+════════════════════════════════════════════════════════
+
+Ao usar o template "Landing Page", você terá acesso a:
+
+SEÇÃO HERO:
+- Título principal
+- Subtítulo/descrição
+- Texto do botão
+- URL do botão
+
+SEÇÃO CTA:
+- Título do CTA
+- Texto do CTA
+- Texto do botão CTA
+- URL do botão CTA
+
+Preencha esses campos no editor de página para personalizar!
+
+════════════════════════════════════════════════════════
+📱 WIDGETS E SIDEBAR
+════════════════════════════════════════════════════════
+
+O tema suporta 2 áreas de widgets:
+
+1. SIDEBAR (Barra Lateral)
+   - Aparece em posts e páginas comuns
+   - Vá em: Aparência > Widgets
+   - Arraste widgets para "Sidebar"
+
+2. FOOTER (Rodapé)
+   - Aparece no rodapé de todas as páginas
+   - Vá em: Aparência > Widgets
+   - Arraste widgets para "Footer"
+
+════════════════════════════════════════════════════════
+🚀 PLUGINS RECOMENDADOS
+════════════════════════════════════════════════════════
+
+Para melhorar a funcionalidade do seu site:
+
+SEO:
+□ Yoast SEO ou Rank Math
+
+FORMULÁRIOS:
+□ Contact Form 7 ou WPForms
+
+CACHE E PERFORMANCE:
+□ WP Rocket ou W3 Total Cache
+
+SEGURANÇA:
+□ Wordfence Security
+
+BACKUP:
+□ UpdraftPlus
+
+════════════════════════════════════════════════════════
+❓ PROBLEMAS COMUNS
+════════════════════════════════════════════════════════
+
+PROBLEMA: Tema não aparece após instalação
+SOLUÇÃO: Verifique se o arquivo style.css está na raiz da pasta do tema
+
+PROBLEMA: Campos personalizados não aparecem
+SOLUÇÃO: Certifique-se de estar usando o template "Landing Page"
+
+PROBLEMA: JavaScript não funciona
+SOLUÇÃO: Verifique se criou a pasta "js" e o arquivo main.js
+
+PROBLEMA: Estilos quebrados
+SOLUÇÃO: Limpe o cache do navegador e do WordPress
+
+════════════════════════════════════════════════════════
+📞 SUPORTE
+════════════════════════════════════════════════════════
+
+Para dúvidas ou problemas:
+Email: contato@seusite.com
+Site: seusite.com
+
+════════════════════════════════════════════════════════
+✅ CHECKLIST DE INSTALAÇÃO
+════════════════════════════════════════════════════════
+
+□ Tema instalado e ativado
+□ Menu principal criado e configurado
+□ Logo adicionado
+□ Página de landing criada com template
+□ Campos personalizados preenchidos
+□ Página inicial definida nas configurações
+□ Widgets adicionados (se necessário)
+□ Plugins recomendados instalados
+□ Teste de responsividade feito
+□ SEO configurado
+□ Site ao vivo!
+
+════════════════════════════════════════════════════════
+
+Boa sorte com seu site! 🎉
