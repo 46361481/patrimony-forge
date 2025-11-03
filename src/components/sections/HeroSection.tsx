@@ -7,11 +7,11 @@ export const HeroSection = () => {
   return <section className="relative min-h-screen overflow-hidden overflow-x-hidden bg-black">
       {/* Mobile background - Split layout */}
       <div className="absolute inset-0 md:hidden flex bg-black">
-        {/* Left 20% - Solid Black */}
-        <div className="w-[20%] bg-black"></div>
+        {/* Left 30% - Solid Black */}
+        <div className="w-[30%] bg-black"></div>
         
-        {/* Right 80% - Photo Background */}
-        <div className="w-[80%] bg-black relative" style={{
+        {/* Right 70% - Photo Background */}
+        <div className="w-[70%] bg-black relative" style={{
           backgroundImage: `url(${rhuanHero})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
