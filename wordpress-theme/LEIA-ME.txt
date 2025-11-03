@@ -1,0 +1,153 @@
+===============================================
+TEMA WORDPRESS - MECANISMO DE ALAVANCAGEM
+===============================================
+
+Este é um tema WordPress completo baseado no design da landing page do evento "Mecanismo de Alavancagem".
+
+===============================================
+ARQUIVOS INCLUÍDOS
+===============================================
+
+1. style.css - Estilos principais do tema
+2. functions.php - Funções e configurações do WordPress
+3. header.php - Cabeçalho do site
+4. footer.php - Rodapé do site
+5. index.php - Template padrão para posts e páginas
+6. page-landing.php - Template especial para landing pages
+7. js/main.js - JavaScript para interatividade
+8. README.txt - Informações do tema
+9. INSTRUCOES-INSTALACAO.txt - Guia detalhado de instalação
+
+===============================================
+INSTALAÇÃO RÁPIDA
+===============================================
+
+1. Crie uma pasta chamada "mecanismo-alavancagem" em:
+   wp-content/themes/
+
+2. Coloque todos os arquivos dentro dessa pasta
+
+3. Crie a subpasta "js" e coloque o arquivo main.js dentro dela
+
+4. No painel do WordPress, vá em:
+   Aparência > Temas > Ativar "Mecanismo de Alavancagem"
+
+5. Crie uma nova página e selecione o template "Landing Page"
+
+===============================================
+ESTRUTURA DE PASTAS
+===============================================
+
+mecanismo-alavancagem/
+├── style.css
+├── functions.php
+├── header.php
+├── footer.php
+├── index.php
+├── page-landing.php
+├── README.txt
+├── INSTRUCOES-INSTALACAO.txt
+├── LEIA-ME.txt
+└── js/
+    └── main.js
+
+===============================================
+CAMPOS CUSTOMIZADOS
+===============================================
+
+Ao usar o template "Landing Page", você terá acesso a:
+
+SEÇÃO HERO:
+- Título
+- Subtítulo
+- Texto do Botão
+- URL do Botão
+- URL da Imagem de Fundo
+
+SEÇÃO CTA:
+- Título
+- Texto
+- Texto do Botão
+- URL do Botão
+
+SEÇÃO OFERTA:
+- Preço (ex: 997)
+- Preço Antigo (ex: 3997)
+- Parcelas (ex: 12x de R$ 97)
+- Texto do Botão
+- URL do Botão
+
+===============================================
+CORES DO TEMA (HSL)
+===============================================
+
+Primary Green: 142 76% 36%
+Background: 222.2 84% 4.9%
+Card: 222.2 47.4% 11.2%
+Red Accent: 0 84% 60%
+Border: 217.2 32.6% 17.5%
+
+===============================================
+PERSONALIZAÇÕES
+===============================================
+
+Para alterar cores, edite as variáveis CSS em style.css:
+:root {
+  --background: 222.2 84% 4.9%;
+  --green-primary: 142 76% 36%;
+  etc...
+}
+
+Para adicionar novos campos, edite functions.php na seção
+de custom fields.
+
+===============================================
+COMPATIBILIDADE
+===============================================
+
+WordPress: 5.0 ou superior
+PHP: 7.4 ou superior
+Navegadores: Todos os modernos
+
+===============================================
+RECURSOS
+===============================================
+
+✓ Design responsivo
+✓ Animações suaves
+✓ FAQ interativo
+✓ Smooth scroll
+✓ SEO otimizado
+✓ Campos customizados
+✓ Template de landing page
+✓ Sistema de cores consistente
+
+===============================================
+SUPORTE
+===============================================
+
+Para dúvidas ou problemas:
+Email: contato@seusite.com
+
+===============================================
+PRÓXIMOS PASSOS
+===============================================
+
+1. Ative o tema
+2. Crie uma página usando o template "Landing Page"
+3. Preencha os campos customizados
+4. Configure os menus em Aparência > Menus
+5. Adicione seu logo em Aparência > Personalizar
+6. Configure as URLs dos botões CTA
+
+===============================================
+DICAS IMPORTANTES
+===============================================
+
+- Use imagens de alta qualidade para o hero
+- Configure URLs de checkout reais nos botões
+- Teste em diferentes dispositivos
+- Otimize as imagens antes do upload
+- Configure SSL (https) para segurança
+
+===============================================
