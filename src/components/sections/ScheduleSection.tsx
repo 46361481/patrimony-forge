@@ -16,7 +16,7 @@ export const ScheduleSection = () => {
       title: "Máquina de Fazer Dinheiro",
       topics: [
         "Mecanismo #2: Transformar investimentos em geradores de renda automáticos",
-        'Como criar "patrimonio” geradores de renda passiva. ',
+        'Como criar "patrimônio” geradores de renda passiva. ',
         "Demonstração prática para implementar imediatamente",
       ],
     },
