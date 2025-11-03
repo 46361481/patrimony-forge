@@ -2,10 +2,7 @@ import { Button } from "@/components/ui/button";
 import { TrendingUp, Shield, Clock } from "lucide-react";
 import { CountdownTimer } from "@/components/ui/countdown-timer";
 import { ProgressBar } from "@/components/ui/progress-bar";
-import heroPerson1 from "@/assets/hero-person-1.jpg";
-import heroPerson2 from "@/assets/hero-person-2.jpg";
-import heroPerson3 from "@/assets/hero-person-3.jpg";
-import heroPerson4 from "@/assets/hero-person-4.jpg";
+import rhuanHero from "@/assets/rhuan-hero.jpg";
 export const HeroSection = () => {
   return <section className="relative min-h-screen bg-gray-50 text-foreground py-4 md:py-8 px-4">
       <div className="container mx-auto max-w-7xl">
@@ -49,19 +46,10 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right: Photo grid */}
-          <div className="grid grid-cols-2 gap-4 animate-fade-in">
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img src={heroPerson1} alt="Investidor 1" className="w-full h-full object-cover aspect-square" />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
-              <img src={heroPerson2} alt="Investidor 2" className="w-full h-full object-cover aspect-square" />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg -mt-8">
-              <img src={heroPerson3} alt="Investidor 3" className="w-full h-full object-cover aspect-square" />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img src={heroPerson4} alt="Investidor 4" className="w-full h-full object-cover aspect-square" />
+          {/* Right: Photo */}
+          <div className="animate-fade-in">
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img src={rhuanHero} alt="Rhuan Christo" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
