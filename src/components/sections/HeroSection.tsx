@@ -67,9 +67,9 @@ export const HeroSection = () => {
 
             {/* Pricing Info */}
             <div className="max-w-xl mb-4 text-center">
-              <p className="text-sm text-gray-300 line-through mb-1">De R$ 1.075,00 por apenas:</p>
-              <p className="text-4xl md:text-5xl font-bold text-green-primary mb-1">R$ 47,00</p>
-              <p className="text-sm text-gray-200">ou 12x de R$ 4,59</p>
+              <p className="text-xs text-gray-300 line-through mb-1">De R$ 1.075,00 por apenas:</p>
+              <p className="text-2xl md:text-3xl font-bold text-green-primary mb-1">R$ 47,00</p>
+              <p className="text-xs text-gray-200">ou 12x de R$ 4,59</p>
             </div>
 
             {/* Última Turma */}
