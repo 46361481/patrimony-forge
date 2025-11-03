@@ -37,7 +37,7 @@ export const TestimonialsSection = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <Quote className="w-10 h-10 text-green-primary mb-4" />
-              <p className="text-gray-700 mb-6 leading-relaxed italic">{testimonial.text}</p>
+              <p className="text-white mb-6 leading-relaxed italic">{testimonial.text}</p>
               
               <div className="flex items-center gap-4 pt-6 border-t border-gray-200">
                 <img
@@ -47,7 +47,7 @@ export const TestimonialsSection = () => {
                 />
                 <div>
                   <p className="font-bold text-card-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-gray-600">{testimonial.role}</p>
+                  <p className="text-sm text-white">{testimonial.role}</p>
                 </div>
               </div>
             </div>
