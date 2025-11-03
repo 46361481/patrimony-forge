@@ -21,7 +21,7 @@ export const HeroSection = () => {
         ></div>
       </div>
       
-      <div className="container mx-auto max-w-7xl relative z-10 py-4 md:py-8 px-4">
+      <div className="container mx-auto max-w-7xl relative z-10 py-4 md:py-8 px-4 bg-black">
         {/* Main content */}
         <div className="max-w-3xl mb-8">
           {/* Headlines and CTA */}
