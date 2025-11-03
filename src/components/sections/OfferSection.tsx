@@ -46,9 +46,14 @@ export const OfferSection = () => {
             <p className="text-center text-gray-600">ou 12x de R$ 4,59</p>
           </div>
 
-          <Button variant="cta" size="xl" className="w-full animate-pulse-green">
-            GARANTIR MINHA PARTICIPAÇÃO
-          </Button>
+          <div className="flex justify-center px-4">
+            <Button variant="cta" size="xl" className="px-6 md:px-12 animate-pulse-green text-sm sm:text-base md:text-lg w-full md:w-auto leading-tight">
+              <span className="flex flex-col items-center">
+                <span>GARANTIR</span>
+                <span>MINHA PARTICIPAÇÃO</span>
+              </span>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
