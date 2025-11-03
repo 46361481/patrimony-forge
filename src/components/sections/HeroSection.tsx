@@ -13,7 +13,7 @@ export const HeroSection = () => {
         {/* Right 60% - Photo Background */}
         <div className="w-[60%] bg-black relative" style={{
         backgroundImage: `url(${rhuanHero})`,
-        backgroundSize: 'cover',
+        backgroundSize: '120%',
         backgroundPosition: 'center top'
       }}>
           {/* Gradient overlay */}
@@ -31,7 +31,7 @@ export const HeroSection = () => {
         {/* Right 40% - Photo Background */}
         <div className="w-[40%] bg-black relative" style={{
         backgroundImage: `url(${rhuanHero})`,
-        backgroundSize: 'cover',
+        backgroundSize: '120%',
         backgroundPosition: 'center'
       }}>
           {/* Gradient overlay - transição suave do preto para a foto */}
