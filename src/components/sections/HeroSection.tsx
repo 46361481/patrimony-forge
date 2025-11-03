@@ -52,11 +52,19 @@ export const HeroSection = () => {
             </p>
 
             {/* Pricing - Apenas R$ 47 */}
-            <div className="mb-4">
+            <div className="mb-2">
               <h2 className="text-3xl md:text-4xl font-bold">
                 <span className="text-white">Apenas </span>
                 <span className="text-green-primary">R$ 47</span>
               </h2>
+            </div>
+
+            {/* Última Turma */}
+            <div className="flex items-center gap-2 mb-4">
+              <Clock className="w-4 h-4 text-red-500" />
+              <span className="text-sm font-bold text-red-500">
+                Última turma - Nunca Mais Será Oferecido
+              </span>
             </div>
 
             {/* CTA Button */}
@@ -71,14 +79,6 @@ export const HeroSection = () => {
             
             {/* Progress Text */}
             <p className="text-sm text-white font-medium mb-1">73% das vagas preenchidas</p>
-
-            {/* Última Turma */}
-            <div className="flex items-center gap-2 mb-4">
-              <Clock className="w-4 h-4 text-red-500" />
-              <span className="text-sm font-bold text-red-500">
-                Última turma - Nunca Mais Será Oferecido
-              </span>
-            </div>
           </div>
         </div>
 
