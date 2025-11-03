@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { TrendingUp, Shield, Clock } from "lucide-react";
 import { CountdownTimer } from "@/components/ui/countdown-timer";
 import { ProgressBar } from "@/components/ui/progress-bar";
-import rhuanHero from "@/assets/rhuan-hero.jpg";
+import rhuanHero from "@/assets/rhuan-hero-new.jpg";
 export const HeroSection = () => {
   return <section className="relative min-h-screen overflow-hidden bg-black">
       {/* Split background: 60% black + 40% photo */}
