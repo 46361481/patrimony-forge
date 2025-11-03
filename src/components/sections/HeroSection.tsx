@@ -14,7 +14,7 @@ export const HeroSection = () => {
         <div className="w-[60%] bg-black relative" style={{
           backgroundImage: `url(${rhuanHero})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center 35%'
+          backgroundPosition: 'center 65%'
         }}>
           {/* Gradient overlay */}
           <div className="absolute inset-0" style={{
