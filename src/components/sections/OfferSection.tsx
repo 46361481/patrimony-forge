@@ -48,7 +48,7 @@ export const OfferSection = () => {
 
           <div className="flex justify-center px-4">
             <Button variant="cta" size="xl" className="px-12 md:px-20 animate-pulse-green text-sm sm:text-base md:text-lg w-full md:w-auto leading-tight" asChild>
-              <a href="https://checkout.pagtrust.com.br/ckb610b099?funnel=fn5ec5bfc0" target="_blank" rel="noopener noreferrer">
+              <a href="https://checkout.pagtrust.com.br/ckb610b099?funnel=fn5ec5bfc0" target="_blank" rel="noopener noreferrer" className="pagtrust-funnel-next-step">
                 <span className="flex flex-col items-center">
                   <span>QUERO GARANTIR</span>
                   <span>MINHA PARTICIPAÇÃO</span>
