@@ -57,23 +57,21 @@ export const HeroSection = () => {
             </h1>
             
             {/* Mobile version */}
-            <p className="text-lg text-gray-100 leading-relaxed mb-8 md:hidden">Domine os 3 mecanismos de alavancagem que 
-transformaram profissionais de alta renda em investidores com renda passiva de R$ 30 mil/mês em 7 anos sem depender de sorte, timing de mercado ou aumentar seu capital inicial.</p>
+            <p className="text-lg text-gray-100 leading-relaxed mb-8 md:hidden">Domine os 3 mecanismos que transformam profissionais de alta renda em investidores com renda passiva de R$30 mil/mês em 7 anos — sem depender de sorte, mercado ou mais capital inicial.</p>
             
             {/* Tablet version */}
             <p className="hidden md:block lg:hidden text-xl text-gray-100 leading-relaxed mb-8">
-              Domine os 3 mecanismos de alavancagem que<br />
-              transformaram profissionais de alta renda<br />
-              em investidores com renda passiva de R$ 30 mil/mês<br />
-              em 7 anos sem depender de sorte, timing de mercado<br />
-              ou aumentar seu capital inicial.
+              Domine os 3 mecanismos que transformam<br />
+              profissionais de alta renda em investidores<br />
+              com renda passiva de R$30 mil/mês em 7 anos —<br />
+              sem depender de sorte, mercado ou mais capital inicial.
             </p>
             
             {/* Desktop version */}
             <p className="hidden lg:block text-xl text-gray-100 leading-relaxed mb-8">
-              Domine os 3 mecanismos de alavancagem que transformaram profissionais de alta<br />
-              renda em investidores com renda passiva de R$ 30 mil/mês em 7 anos sem depender<br />
-              de sorte, timing de mercado ou aumentar seu capital inicial.
+              Domine os 3 mecanismos que transformam profissionais de alta renda em investidores<br />
+              com renda passiva de R$30 mil/mês em 7 anos — sem depender de sorte, mercado<br />
+              ou mais capital inicial.
             </p>
 
             {/* Pricing - Apenas R$ 47 */}
