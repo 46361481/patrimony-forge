@@ -51,27 +51,24 @@ export const HeroSection = () => {
           {/* Headlines and CTA */}
           <div className="animate-slide-up">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-white">
-              3 Dias Construindo Sua{" "}
-              <span className="text-gradient-green">Arquitetura Financeira</span>{" "}
-              para Alavancar Seu Patrimônio de Forma Estruturada
+              Para médico, empresários e profissionais de alta renda que construíram patrimônio, mas ainda pagam sua liberdade com o próprio tempo
             </h1>
             
             {/* Mobile version */}
-            <p className="text-lg text-gray-100 leading-relaxed mb-8 md:hidden">Domine os 3 mecanismos que transformam profissionais de alta renda em investidores com renda passiva de R$30 mil/mês em 7 anos — sem depender de sorte, mercado ou mais capital inicial.</p>
+            <p className="text-lg text-gray-100 leading-relaxed mb-8 md:hidden">Domine os 3 mecanismos que permite sustentar seu padrão de vida sem depender de plantões, reuniões ou mais horas de trabalho. Em 7 anos, você escolhe se quer trabalhar — não precisa.</p>
             
             {/* Tablet version */}
             <p className="hidden md:block lg:hidden text-xl text-gray-100 leading-relaxed mb-8">
-              Domine os 3 mecanismos que transformam<br />
-              profissionais de alta renda em investidores<br />
-              com renda passiva de R$30 mil/mês em 7 anos —<br />
-              sem depender de sorte, mercado ou mais capital inicial.
+              Domine os 3 mecanismos que permite sustentar seu padrão de vida<br />
+              sem depender de plantões, reuniões ou mais horas de trabalho.<br />
+              Em 7 anos, você escolhe se quer trabalhar — não precisa.
             </p>
             
             {/* Desktop version */}
             <p className="hidden lg:block text-xl text-gray-100 leading-relaxed mb-8">
-              Domine os 3 mecanismos que transformam profissionais de alta renda em investidores<br />
-              com renda passiva de R$30 mil/mês em 7 anos — sem depender de sorte, mercado<br />
-              ou mais capital inicial.
+              Domine os 3 mecanismos que permite sustentar seu padrão de vida sem depender<br />
+              de plantões, reuniões ou mais horas de trabalho. Em 7 anos, você escolhe<br />
+              se quer trabalhar — não precisa.
             </p>
 
             {/* Pricing - Apenas R$ 47 */}
