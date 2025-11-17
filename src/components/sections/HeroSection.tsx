@@ -51,7 +51,7 @@ export const HeroSection = () => {
           {/* Headlines and CTA */}
           <div className="animate-slide-up">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-white">
-              Para médico, empresários e profissionais de alta renda que construíram patrimônio, mas ainda pagam sua liberdade com o próprio tempo
+              Para médico, empresários e profissionais de alta renda que <span className="text-green-primary">construíram patrimônio</span>, mas ainda pagam sua liberdade com o <span className="text-green-primary">próprio tempo</span>
             </h1>
             
             {/* Mobile version */}
