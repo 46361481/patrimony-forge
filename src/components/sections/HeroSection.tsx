@@ -86,10 +86,10 @@ export const HeroSection = () => {
             </div>
 
             {/* CTA Button */}
-            <Button variant="cta" size="xl" className="max-w-xl w-full mb-4 animate-pulse-green text-base md:text-lg font-bold" onClick={() => document.getElementById('inscricao')?.scrollIntoView({
-            behavior: 'smooth'
-          })}>
-              QUERO GARANTIR MINHA PARTICIPAÇÃO
+            <Button variant="cta" size="xl" className="max-w-xl w-full mb-4 animate-pulse-green text-base md:text-lg font-bold" asChild>
+              <a href="https://payfast.greenn.com.br/65441/offer/ou7qLy?ch_id=12438&b_id_1=80966&b_offer_1=9k4tKj" target="_blank" rel="noopener noreferrer">
+                QUERO GARANTIR MINHA PARTICIPAÇÃO
+              </a>
             </Button>
 
             {/* Progress Bar */}
